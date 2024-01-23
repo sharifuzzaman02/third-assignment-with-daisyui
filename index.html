@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey’s</title>
+    <!-- Tailwind and Daisy UI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'hocky-primary': '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- custom style -->
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-manrope">
+    <header class="cintainer mx-auto lg:px-24 px-8">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base first-line:shadow bg-base-100 rounded-box w-52">
+                            <li><a class="bg-hocky-primary text-white">Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn gap-0 btn-ghost text-2xl lg:text-4xl  font-extrabold">Hockey<span class="text-hocky-primary">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal text-base px-1">
+                        <li><a class="text-hocky-primary font-bold">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-6">
+                    <img class="hidden lg:block" src="Images/Frame.png" alt="">
+                    <!-- <input class="btn bg-hocky-primary text-white text-base font-bold rounded-2xl" type="text"
+                        placeholder="Get Ticket"> -->
+                    <a class="px-4 py-2 lg:px-6 lg:py-4 lg:px text-lg lg:text-2xl font-bold rounded-lg bg-hocky-primary text-white">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- carousel -->
+        <div class="carousel w-full">
+            <!-- slide 1 -->
+            <div id="slide1" class="carousel-item relative w-full h-[200px] lg:h-[550px]">
+                <img src="/images//1.png" class="w-full h-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slide 2 -->
+            <div id="slide2" class="carousel-item relative w-full h-[200px] lg:h-[550px]">
+                <img src="/images//2.png" class="w-full h-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slide 3 -->
+            <div id="slide3" class="carousel-item relative w-full h-[200px] lg:h-[550px]">
+                <img src="/images//3.png" class="w-full h-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 mb-10 p-4 lg:p-8 gap:2 lg:gap-4 lg:h-[165px] w-[100%] lg:w-[556px] mx-auto bg-[#131318] lg:-translate-y-40 mr-8 text-white rounded-lg">
+            <h6 class="text-lg lg:text-2xl font-extrabold">Meet all the heroes from the field</h6>
+            <p class="text-sm lg:text-base font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                placerat dolor. Purus urna in sit
+                nullam proin. </p>
+        </div>
+    </header>
+    <main class="cintainer mx-auto lg:px-24 px-8">
+        <!-- professional section -->
+        <div>
+            <h3 class="font-extrabold text-4xl text-[#131318]">Professional Hockeys Club</h3>
+            <p class="font-medium text-base text-[#13131899] gap-6">Dit amet consectetur. Condimentum dignissim adipiscing
+                aliquam turpis placerat <br>
+                dolor. Purus urna in sit
+                nullam proin. </p>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
